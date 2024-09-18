@@ -202,4 +202,8 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <modules>
+        <module>artan-data-parent</module>
+    </modules>
 </project>
