@@ -205,5 +205,6 @@
 
     <modules>
         <module>artan-data-parent</module>
+        <module>artan-framework-parent</module>
     </modules>
 </project>
