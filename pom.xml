@@ -46,6 +46,8 @@
     </issueManagement>
 
     <properties>
+        <artan-core.version>0.0.0-SNAPSHOT</artan-core.version>
+
         <lombok.version>1.18.34</lombok.version>
 
         <junit-jupiter.version>5.11.0</junit-jupiter.version>
@@ -94,6 +96,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.github.artanpg</groupId>
+                <artifactId>artan-core</artifactId>
+                <version>${artan-core.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
