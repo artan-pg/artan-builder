@@ -39,6 +39,21 @@
         </developer>
     </developers>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>jakarta.persistence</groupId>
+                <artifactId>jakarta.persistence-api</artifactId>
+                <version>${jakarta.persistence-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.transaction</groupId>
+                <artifactId>jakarta.transaction-api</artifactId>
+                <version>${jakarta.transaction-api.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <defaultGoal>clean install</defaultGoal>
 
