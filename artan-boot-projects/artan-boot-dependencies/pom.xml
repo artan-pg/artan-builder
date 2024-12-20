@@ -1,15 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.github.artanpg</groupId>
+        <artifactId>artan-boot-projects</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>com.github.artanpg</groupId>
-    <artifactId>artan-builder</artifactId>
-    <version>0.0.0-SNAPSHOT</version>
+    <artifactId>artan-boot-dependencies</artifactId>
     <packaging>pom</packaging>
 
-    <name>artan-builder</name>
+    <name>artan-boot-dependencies</name>
     <description>
-        Module to centralize common resources and configuration for Artan Programming Group maven projects.
+        All versions of maven libraries and plugins that can be used in various projects of the Artan programming group
+        are maintained and managed in this module.
     </description>
     <url>https://github.com/artan-pg/artan-builder</url>
 
@@ -48,13 +52,8 @@
 
     <properties>
         <java.version>17</java.version>
-        <maven.compiler.release>${java.version}</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mmZ</maven.build.timestamp.format>
     </properties>
-
-    <modules>
-        <module>artan-boot-projects</module>
-    </modules>
 </project>
