@@ -102,6 +102,7 @@
         <docker-maven-plugin.version>0.45.1</docker-maven-plugin.version>
         <jib-maven-plugin.version>3.4.4</jib-maven-plugin.version>
         <git-commit-id-maven-plugin.version>9.0.1</git-commit-id-maven-plugin.version>
+        <liquibase-maven-plugin.version>4.30.0</liquibase-maven-plugin.version>
     </properties>
 
     <build>
@@ -329,6 +330,11 @@
                     <groupId>io.github.git-commit-id</groupId>
                     <artifactId>git-commit-id-maven-plugin</artifactId>
                     <version>${git-commit-id-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.liquibase</groupId>
+                    <artifactId>liquibase-maven-plugin</artifactId>
+                    <version>${liquibase-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
