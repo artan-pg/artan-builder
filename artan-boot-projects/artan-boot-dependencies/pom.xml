@@ -98,6 +98,7 @@
 
         <nexus-staging-maven-plugin.version>1.7.0</nexus-staging-maven-plugin.version>
         <sonar-maven-plugin.version>5.0.0.4389</sonar-maven-plugin.version>
+        <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
     </properties>
 
     <build>
@@ -305,6 +306,11 @@
                     <groupId>org.sonarsource.scanner.maven</groupId>
                     <artifactId>sonar-maven-plugin</artifactId>
                     <version>${sonar-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jacoco</groupId>
+                    <artifactId>jacoco-maven-plugin</artifactId>
+                    <version>${jacoco-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>
